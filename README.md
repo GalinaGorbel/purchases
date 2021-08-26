@@ -1,3 +1,3 @@
-# technologist
+# purchases
 npm i - устанавливаем пакеты
 npm run start - запускаем проект
