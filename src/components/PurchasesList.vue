@@ -68,7 +68,7 @@ export default {
     let products = computed(() => {
       return store.getters['request/requests'].filter((request) => {
         if (filter.value) {
-          return request.category.includes(filter.value);
+          return request.category.includes(filter.value.toLowerCase());
         }
         return request;
       });
