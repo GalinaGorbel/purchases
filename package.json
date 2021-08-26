@@ -1,0 +1,41 @@
+{
+  "name": "vue-first-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "start": "concurrently \"json-server db.json --port 3000\" \"npm run serve\""
+  },
+  "dependencies": {
+    "@vue/cli": "^4.5.13",
+    "@vuelidate/core": "^2.0.0-alpha.23",
+    "@vuelidate/validators": "^2.0.0-alpha.20",
+    "axios": "^0.21.1",
+    "core-js": "^3.15.2",
+    "firebase-tools": "^9.16.0",
+    "json-server": "^0.16.3",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "vee-validate": "^4.4.9",
+    "vue": "^3.1.5",
+    "vue-router": "^4.0.10",
+    "vue3-datepicker": "^0.2.5",
+    "vuelidate": "^0.7.6",
+    "vuex": "^4.0.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~5.0.0-alpha.7",
+    "@vue/cli-plugin-eslint": "~5.0.0-alpha.7",
+    "@vue/cli-service": "~5.0.0-alpha.7",
+    "@vue/compiler-sfc": "^3.1.5",
+    "babel-eslint": "^10.1.0",
+    "concurrently": "^6.2.1",
+    "eslint": "^7.31.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
