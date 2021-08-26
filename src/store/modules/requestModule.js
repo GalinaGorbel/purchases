@@ -14,7 +14,7 @@ export default {
     },
     mutations: {
         setRequests(state, payload) {
-            console.log(payload)
+
             state.requests = payload;
         },
         setChartRequests(state, payload) {
@@ -32,7 +32,7 @@ export default {
     },
     actions: {
         async loadExperience(context) {
-            console.log('load...');
+     
             let date1 = context.getters.date1.toLocaleDateString().split('.').reverse().join('-');
             let date2 = context.getters.date2.toLocaleDateString().split('.').reverse().join('-');
             try {
@@ -44,7 +44,7 @@ export default {
             context.dispatch('purchases/totalSum', null, { root: true });
         },
         async loadAll(context) {
-            console.log('loadAll...');
+   
             try {
                 const res = await axios.get(`${url}/purchase`);
                 context.commit('setChartRequests', res.data)

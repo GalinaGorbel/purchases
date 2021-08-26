@@ -39,8 +39,6 @@ export default {
       editCategory: '',
     });
 
-    console.log(props.search)
-
 const whatToDo = 'saveChanges';
 
     function delItem() {

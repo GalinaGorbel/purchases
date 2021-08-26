@@ -26,7 +26,6 @@ export default {
       rows_count: 6,
       max: 0,
       min: 0,
-      startY: 0,
       points: [],
     };
   },
